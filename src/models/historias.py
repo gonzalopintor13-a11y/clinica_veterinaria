@@ -2,10 +2,10 @@ from dataclasses import dataclass
 from datetime import datetime
 
 @dataclass
-class Cita:
+class HistoriaClinica:
     id: str
     mascota_id: str
-    veterinario_id: str
-    fecha_hora: datetime
-    motivo: str
-    estado: str = "Programada"
+    fecha: datetime
+    diagnostico: str
+    tratamiento: str
+    observaciones: str
